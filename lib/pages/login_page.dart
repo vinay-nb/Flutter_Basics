@@ -93,6 +93,7 @@ class _LoginPageState extends State<LoginPage> {
                             height: 25.0,
                           ),
                           Material(
+                            // splashColor: Colors.red,
                             color: Colors.blue,
                             borderRadius:
                                 BorderRadius.circular(buttonChange ? 60 : 7),
