@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
     var days1 = "Friday";
     const pi1 = 3.142;
     return Scaffold(
-      appBar: AppBar(
+      appBar: AppBar( 
         title: Text('Catalogue'),
       ),
       body: Center(
