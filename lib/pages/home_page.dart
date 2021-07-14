@@ -14,8 +14,8 @@ class HomePage extends StatelessWidget {
     var days1 = "Friday";
     const pi1 = 3.142;
     return Scaffold(
-      appBar: AppBar( 
-        title: Text('Catalogue'),
+      appBar: AppBar(
+        title: Text('Catalog'),
       ),
       body: Center(
           child: Container(child: Text("Hello $days by $name on $days1 $pi1"))),

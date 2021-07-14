@@ -29,7 +29,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Center(child: Text("Catalogue"))),
+        appBar: AppBar(title: Center(child: Text("Catalog"))),
         body: Center(
           child: Material(
               color: Colors.white,
