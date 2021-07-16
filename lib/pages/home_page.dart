@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/models/catalog.dart';
 import 'package:my_app/widgets/MyDrawer.dart';
+import 'package:my_app/widgets/item_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -13,12 +15,21 @@ class HomePage extends StatelessWidget {
 
     var days1 = "Friday";
     const pi1 = 3.142;
+    final listBuilder = List.generate(8, (index) => CatalogModel.items[0]);
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Catalog'),
       ),
-      body: Center(
-          child: Container(child: Text("Hello $days by $name on $days1 $pi1"))),
+      body: Padding(
+        padding: const EdgeInsets.all(18.0),
+        child: ListView.builder(
+          itemCount: listBuilder.length,
+          itemBuilder: (context, index) {
+            return ItemWidget(item: listBuilder[index]);
+          },
+        ),
+      ),
       drawer: MyDrawer(),
     );
   }
