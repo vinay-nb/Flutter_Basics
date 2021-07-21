@@ -21,7 +21,7 @@ class ItemWidget extends StatelessWidget {
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.w800),
         ),
         subtitle: Text(
-          item.description,
+          item.desc,
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.w800),
         ),
         trailing: Text(
